@@ -1,9 +1,11 @@
 var express = require('express');
+var fs = require('fs');
 
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('Hurah! Here I am editing my first node.js application');
+var fileContent = fs.readFileSync('index.html');
+  response.send(fileContent);
 });
 
 var port = process.env.PORT || 5000;

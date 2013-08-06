@@ -1,0 +1,274 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/bin/npm', 'install', '-g', 'express' ]
+info using npm@1.1.4
+info using node@v0.6.12
+verbose config file /home/ubuntu/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/share/npm/npmrc
+verbose cache add [ 'express', null ]
+silly cache add: name, spec, args [ undefined, 'express', [ 'express', null ] ]
+verbose parsed url { pathname: 'express', path: 'express', href: 'express' }
+verbose addNamed [ 'express', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'express', '', false ]
+verbose raw, before any munging express
+verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+verbose url resolved https://registry.npmjs.org/express
+http GET https://registry.npmjs.org/express
+http 200 https://registry.npmjs.org/express
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+silly get cb     etag: '"8Y9J83MOKUE5ZY0FBPH061JOY"',
+silly get cb     date: 'Tue, 06 Aug 2013 23:38:29 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '393140' } ]
+verbose mkdir (expected) error ENOENT, no such file or directory '/home/ubuntu/.npm/express'
+verbose mkdir done: /home/ubuntu/.npm/express 755
+silly name, range, hasData 2 [ 'express', '', true ]
+silly versions [ 'express',
+silly versions   [ '0.14.0',
+silly versions     '0.14.1',
+silly versions     '1.0.0',
+silly versions     '1.0.1',
+silly versions     '1.0.2',
+silly versions     '1.0.3',
+silly versions     '1.0.4',
+silly versions     '1.0.5',
+silly versions     '1.0.6',
+silly versions     '1.0.7',
+silly versions     '2.5.0',
+silly versions     '2.5.1',
+silly versions     '2.5.2',
+silly versions     '2.5.3',
+silly versions     '2.5.4',
+silly versions     '2.5.5',
+silly versions     '2.5.6',
+silly versions     '2.5.7',
+silly versions     '2.5.8',
+silly versions     '2.5.9',
+silly versions     '2.5.10',
+silly versions     '2.5.11',
+silly versions     '3.0.0',
+silly versions     '3.0.1',
+silly versions     '3.0.2',
+silly versions     '3.0.3',
+silly versions     '3.0.4',
+silly versions     '3.0.5',
+silly versions     '3.0.6',
+silly versions     '3.1.0',
+silly versions     '3.1.1',
+silly versions     '3.1.2',
+silly versions     '3.2.0',
+silly versions     '3.2.1',
+silly versions     '3.2.2',
+silly versions     '3.2.3',
+silly versions     '3.2.4',
+silly versions     '3.2.5',
+silly versions     '3.2.6',
+silly versions     '3.3.0',
+silly versions     '3.3.1',
+silly versions     '3.3.2',
+silly versions     '3.3.3',
+silly versions     '3.3.4',
+silly versions     '1.0.0-beta',
+silly versions     '1.0.0-beta2',
+silly versions     '1.0.0-rc',
+silly versions     '1.0.0-rc2',
+silly versions     '1.0.0-rc3',
+silly versions     '1.0.0-rc4',
+silly versions     '3.0.0-alpha1',
+silly versions     '3.0.0-alpha2',
+silly versions     '3.0.0-alpha3',
+silly versions     '3.0.0-alpha4',
+silly versions     '3.0.0-alpha5',
+silly versions     '3.0.0-beta1',
+silly versions     '3.0.0-beta2',
+silly versions     '3.0.0-beta3',
+silly versions     '3.0.0-beta4',
+silly versions     '3.0.0-beta6',
+silly versions     '3.0.0-beta7',
+silly versions     '3.0.0-rc1',
+silly versions     '3.0.0-rc2',
+silly versions     '3.0.0-rc3',
+silly versions     '3.0.0-rc4',
+silly versions     '3.0.0-rc5' ] ]
+verbose bin dist [ '0.6-ares1.7.5-evundefined-openssl1.0.1-v83.7.12.22-linux-ia32-3.2.0-31-generic-pae',
+verbose bin dist   { shasum: '9abf22017213a8f6f54a421ce22b8ec27b7def62',
+verbose bin dist     tarball: 'http://registry.npmjs.org/express/-/express-3.3.4.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-3.3.4.tgz',
+verbose addRemoteTarball   '9abf22017213a8f6f54a421ce22b8ec27b7def62' ]
+verbose mkdir (expected) error ENOENT, no such file or directory '/tmp/npm-1375832312940'
+verbose mkdir (expected) error ENOENT, no such file or directory '/tmp/npm-1375832312940/1375832312941-0.18497248832136393'
+verbose mkdir done: /tmp/npm-1375832312940/1375832312941-0.18497248832136393 755
+verbose fetch to /tmp/npm-1375832312940/1375832312941-0.18497248832136393/tmp.tgz
+http GET https://registry.npmjs.org/express/-/express-3.3.4.tgz
+http 200 https://registry.npmjs.org/express/-/express-3.3.4.tgz
+silly updated sha bytes 36094
+info shasum 9abf22017213a8f6f54a421ce22b8ec27b7def62
+info shasum /tmp/npm-1375832312940/1375832312941-0.18497248832136393/tmp.tgz
+verbose mkdir (expected) error ENOENT, no such file or directory '/tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm'
+verbose mkdir done: /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /tmp/npm-1375832312940/1375832312941-0.18497248832136393/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/index.js
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/LICENSE
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/test.js
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/.npmignore
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/Makefile
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/Readme.md
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/.travis.yml
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/package.json
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/History.md
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/bin
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/bin/express
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/lib
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/lib/request.js
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/lib/application.js
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/lib/middleware.js
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/lib/utils.js
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/lib/response.js
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/lib/view.js
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/lib/express.js
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/lib/router
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/lib/router/index.js
+silly asyncMap in gTP /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package/lib/router/route.js
+verbose gunzed /tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package
+verbose rm'ed /tmp/npm-1375832312940/1375832312941-0.18497248832136393/package
+verbose renamed [ '/tmp/npm-1375832312940/1375832312941-0.18497248832136393/___package.npm/package',
+verbose renamed   '/tmp/npm-1375832312940/1375832312941-0.18497248832136393/package' ]
+verbose caching /tmp/npm-1375832312940/1375832312941-0.18497248832136393/package/package.json
+verbose loadDefaults express@3.3.4
+verbose tarball contents [ 'tmp.tgz', 'package' ]
+verbose from cache /tmp/npm-1375832312940/1375832312941-0.18497248832136393/package/package.json
+verbose pack /tmp/npm-1375832312940/1375832312941-0.18497248832136393/package
+verbose pack /tmp/npm-1375832312940/1375832312941-0.18497248832136393/package /home/ubuntu/.npm/express/3.3.4/package.tgz
+silly makeList /tmp/npm-1375832312940/1375832312941-0.18497248832136393/package
+silly dir, dirLen [ '/tmp/npm-1375832312940/1375832312941-0.18497248832136393/package',
+silly dir, dirLen   65 ]
+verbose tarball /home/ubuntu/.npm/express/3.3.4/package.tgz
+verbose parent /tmp/npm-1375832312940/1375832312941-0.18497248832136393/package
+verbose mkdir (expected) error ENOENT, no such file or directory '/home/ubuntu/.npm/express/3.3.4/___package.npm'
+verbose mkdir done: /home/ubuntu/.npm/express/3.3.4/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /home/ubuntu/.npm/express/3.3.4/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/index.js
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/LICENSE
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/test.js
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/.npmignore
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/Makefile
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/Readme.md
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/.travis.yml
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/package.json
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/History.md
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/bin
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/bin/express
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/lib
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/lib/request.js
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/lib/application.js
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/lib/middleware.js
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/lib/utils.js
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/lib/response.js
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/lib/view.js
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/lib/express.js
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/lib/router
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/lib/router/index.js
+silly asyncMap in gTP /home/ubuntu/.npm/express/3.3.4/___package.npm/package/lib/router/route.js
+verbose gunzed /home/ubuntu/.npm/express/3.3.4/___package.npm/package
+verbose rm'ed /home/ubuntu/.npm/express/3.3.4/package
+verbose renamed [ '/home/ubuntu/.npm/express/3.3.4/___package.npm/package',
+verbose renamed   '/home/ubuntu/.npm/express/3.3.4/package' ]
+verbose caching /home/ubuntu/.npm/express/3.3.4/package/package.json
+verbose loadDefaults express@3.3.4
+silly updated sha bytes 36273
+info shasum 1dc1c331f841ac5046329bccf650a20a67291cdc
+info shasum /home/ubuntu/.npm/express/3.3.4/package.tgz
+verbose from cache /home/ubuntu/.npm/express/3.3.4/package/package.json
+verbose chmod /home/ubuntu/.npm/express/3.3.4/package.tgz 644
+verbose chown [ '/home/ubuntu/.npm/express/3.3.4/package.tgz', 1000, 1000 ]
+silly resolved [ { name: 'express',
+silly resolved     description: 'Sinatra inspired web development framework',
+silly resolved     version: '3.3.4',
+silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly resolved        { name: 'Aaron Heckmann',
+silly resolved          email: 'aaron.heckmann+github@gmail.com' },
+silly resolved        { name: 'Ciaran Jessup', email: 'ciaranj@gmail.com' },
+silly resolved        { name: 'Guillermo Rauch', email: 'rauchg@gmail.com' } ],
+silly resolved     dependencies: 
+silly resolved      { connect: '2.8.4',
+silly resolved        commander: '1.2.0',
+silly resolved        'range-parser': '0.0.4',
+silly resolved        mkdirp: '0.3.5',
+silly resolved        cookie: '0.1.0',
+silly resolved        'buffer-crc32': '0.2.1',
+silly resolved        fresh: '0.1.0',
+silly resolved        methods: '0.0.1',
+silly resolved        send: '0.1.3',
+silly resolved        'cookie-signature': '1.0.1',
+silly resolved        debug: '*' },
+silly resolved     devDependencies: 
+silly resolved      { ejs: '*',
+silly resolved        mocha: '*',
+silly resolved        jade: '0.30.0',
+silly resolved        hjs: '*',
+silly resolved        stylus: '*',
+silly resolved        should: '*',
+silly resolved        'connect-redis': '*',
+silly resolved        marked: '*',
+silly resolved        supertest: '0.6.0' },
+silly resolved     keywords: 
+silly resolved      [ 'express',
+silly resolved        'framework',
+silly resolved        'sinatra',
+silly resolved        'web',
+silly resolved        'rest',
+silly resolved        'restful',
+silly resolved        'router',
+silly resolved        'app',
+silly resolved        'api' ],
+silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/express.git' },
+silly resolved     main: 'index',
+silly resolved     bin: { express: './bin/express' },
+silly resolved     scripts: { prepublish: 'npm prune', test: 'make test' },
+silly resolved     engines: { node: '*' },
+silly resolved     _id: 'express@3.3.4',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.12',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '1dc1c331f841ac5046329bccf650a20a67291cdc' },
+silly resolved     _from: 'express' } ]
+info into /usr/local/lib express@3.3.4
+info installOne express@3.3.4
+verbose from cache /home/ubuntu/.npm/express/3.3.4/package/package.json
+info unbuild /usr/local/lib/node_modules/express
+verbose mkdir (expected) error ENOENT, no such file or directory '/usr/local/lib/node_modules'
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /usr/local/lib/node_modules/express
+ERR! Could not create /usr/local/lib/node_modules/___express.npm
+ERR! error installing express@3.3.4
+info unbuild /usr/local/lib/node_modules/express
+verbose installOne cb express@3.3.4
+ERR! Error: EACCES, permission denied '/usr/local/lib/node_modules'
+ERR! 
+ERR! Please try running this command again as root/Administrator.
+ERR! 
+ERR! System Linux 3.2.0-31-generic-pae
+ERR! command "node" "/usr/bin/npm" "install" "-g" "express"
+ERR! cwd /home/ubuntu/bitstarter
+ERR! node -v v0.6.12
+ERR! npm -v 1.1.4
+ERR! path /usr/local/lib/node_modules
+ERR! code EACCES
+ERR! message EACCES, permission denied '/usr/local/lib/node_modules'
+ERR! errno {}
+verbose exit [ 1, true ]

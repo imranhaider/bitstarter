@@ -1,320 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Personal Companion</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-      <link rel="stylesheet" href="https://dl.dropboxusercontent.com/s/7vrqj7nemac0upk/flaty.css?token_hash=AAFKtd8gyyN6Q5iu6XIlf6-74ylB2s0w8N1fMSmibFFXyw&dl=1">
+    <link rel="stylesheet" href="https://dl.dropboxusercontent.com/s/a8ij1wb9cpr7b7r/bootstrap.min.css?token_hash=AAG8EUpmSQ7cmXFXbCzmIoLpZWPgbrQBgks3GNv6to5YqQ&dl=1">
+    <link rel="stylesheet" href="https://dl.dropboxusercontent.com/s/yygtyon2boqt5li/bootstrap-responsive.min.css?token_hash=AAGrwLc8baBMji5B6fE_A6izJbE9_w1ji4Qhqx4jcID2Hw&dl=1">
+    <link rel="stylesheet" href="https://dl.dropboxusercontent.com/s/1gh5zfpefzk0i0x/font-awesome.min.css?token_hash=AAEVjRTLgmF1OBbM8_7Ik63m1-7pEakTbbce2k5K5sb0cw&dl=1" />
+    <link rel="stylesheet" href="https://dl.dropboxusercontent.com/s/760rumk33psvepu/theme-style.css?token_hash=AAFJtrKYV2lxvLwuhL0-KCevX4jCTeTj0cdULpNJ_Utsiw&dl=1" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
-          rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800"
+        rel="stylesheet" type="text/css">
     <style type="text/css">
+        /* Large desktop */
+        @media (min-width: 980px) {
+            body {
+                padding-top: 60px;
+            }
 
-      /* Large desktop */
-      @media (min-width: 980px) { 
+            .linediv-l {
+                border-right: 1px white solid;
+            }
+
+            .linediv-r {
+                border-left: 1px white solid;
+            }
+        }
+
+        /* Landscape phones and down */
+        @media (max-width: 480px) {
+            .copy {
+                padding: 2.5% 10%;
+            }
+
+            .linediv-l {
+                border-bottom: 1px white solid;
+            }
+
+            .linediv-r {
+                border-top: 1px white solid;
+            }
+        }
+
+        /* All form factors */
+
+        /* Main body and headings */
         body {
-         padding-top: 60px;
+            font-family: 'Open Sans', Helvetica, Arial, sans-serif;
         }
-       .linediv-l {
-         border-right: 1px white solid;
+
+        .heading, .subheading {
+            font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+            text-align: center;
         }
-       .linediv-r {
-         border-left: 1px white solid;
-       }
-      }
 
-      /* Landscape phones and down */
-      @media (max-width: 480px) { 
-       .copy {
-         padding: 2.5% 10%;
-       }
-       .linediv-l {
-         border-bottom: 1px white solid;
-       }
-       .linediv-r {
-         border-top: 1px white solid;
-       }
-      }
+        p.lead {
+            padding-top: 1.5%;
+            font-size: 24px;
+            line-height: 30px;
+        }
 
-      /* All form factors */
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
 
-      /* Main body and headings */
-      body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-      }
-      .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-        text-align: center;
-      }
-      p.lead {
-        padding-top: 1.5%;
-        font-size: 24px;
-        line-height: 30px;
-      }
-      p {
-        font-size: 18px;
-        line-height: 24px;
-      }
+        /* Video pitch and Action */
+        .pitch {
+            padding: 2.5% 0%;
+        }
 
-      /* Video pitch and Action */
-      .pitch {
-        padding: 2.5% 0%;
-      }
-      .order {
-        padding: 2% 0%;
-      }
-      .actions {
-        background-color: #343434;
-        padding: 3% 0%;
-      }
-      .video, .thermometer, .order, .social, .statistics {
-        text-align: center;
-      }
-      .statistics h3, .statistics p {
-        color: white;
-      }
+        .order {
+            padding: 2% 0%;
+        }
 
-      /* Marketing Copy and Footer */
-      .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-        text-align: justify;
-      }
-      .asset {
-        padding: 2.5% 0%;
-      }
-      .footer {
-        color: #cccccc;
-        text-align: center;
-      }
-      .footer p {
-        font-size: 11px;
-      }
-      .footer a {
-        color: #ccccff;
-      }
+        .actions {
+            background-color: #343434;
+            padding: 3% 0%;
+        }
+
+        .video, .thermometer, .order, .social, .statistics {
+            text-align: center;
+        }
+
+            .statistics h3, .statistics p {
+                color: white;
+            }
+
+        /* Marketing Copy and Footer */
+        .copy {
+            padding-top: 2.5%;
+            padding-bottom: 2.5%;
+            text-align: justify;
+        }
+
+        .asset {
+            padding: 2.5% 0%;
+        }
+
+        .footer {
+            color: #cccccc;
+            text-align: center;
+        }
+
+            .footer p {
+                font-size: 11px;
+            }
+
+            .footer a {
+                color: #ccccff;
+            }
     </style>
-<script type="text/javascript">
+    <script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-43031111-1']);
-  _gaq.push(['_trackPageview']);
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-43031111-1']);
+        _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
 
 </script>
-  </head>
-  <body>
+    <script type="text/javascript">var addthis_config = { "data_track_addressbar": true };</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520185976fdc6c25"></script>
+</head>
+<body>
 
     <!-- Mobile-friendly navbar adapted from example. -->
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar"
-                  data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Persoanl Companion</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <div id="navigation" class="wrapper">
+        <div class="navbar navbar-static-top">
+            <div class="header">
+                <div class="header-inner container">
+                    <div class="row-fluid">
+                        <!--<button type="button" class="btn btn-navbar"
+                            data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>-->
+                        <div class="span8">
+                            <a class="brand" href="index.html" title="Home">
+                                <h1>
+                                    <span>Personal</span>
+                                     Companion
+                                    <span>.</span>
+                                </h1>
+                            </a>
+                            <div class="slogan">One solution for everyday activities </div>
+                        </div>
+                        <div class="span4">
+                            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                                <a class="addthis_button_preferred_1"></a>
+                                <a class="addthis_button_preferred_2"></a>
+                                <a class="addthis_button_preferred_3"></a>
+                                <a class="addthis_button_preferred_4"></a>
+                                <a class="addthis_button_compact"></a>
+                                <a class="addthis_counter addthis_bubble_style"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-hidden">
+                <div class="header-hidden-inner container">
+                    <div class="row-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="navbar-inner">
+
+                    <!--mobile collapse menu button-->
+                    <a class="btn btn-navbar pull-left" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+
+                    <!--user menu-->
+                    <ul class="nav user-menu pull-right">
+                        <li><a href="signup.htm" class="btn btn-primary signup">Sign Up</a></li>
+                        <li class="dropdown">
+                            <a href="login.htm" class="btn btn-primary dropdown-toggle login" id="login-drop" data-toggle="dropdown">Login</a>
+                            <div class="dropdown-menu" role="menu" aria-labelledby="login-drop">
+                                <form action="login.htm" class="form-inline" id="login-form-drop" role="menuitem">
+                                    <div class="input-append">
+                                        <input type="text" class="input-small email placeholder" placeholder="Email">
+                                        <input type="password" class="input-small password placeholder" placeholder="Password">
+                                        <input type="button" class="btn btn-primary login" value="Login">
+                                    </div>
+                                </form>
+                                <span class="divider" role="menuitem"></span>
+                                <small role="menuitem">Not a member? <a href="#" class="signup">Sign up now!</a></small>
+                                <small role="menuitem"><a href="#">Forgotten password?</a></small>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!--everything within this div is collapsed on mobile-->
+                    <div class="nav-collapse collapse">
+
+                        <!--main navigation-->
+                        <ul class="nav" id="main-menu">
+                            <li class="home-link"><a href="index.htm"><i class="icon-home hidden-phone"></i><span class="visible-phone">Home</span></a></li>
+                            <li class="dropdown"><a href="features.htm" class="dropdown-toggle menu-item" id="features-drop" data-toggle="dropdown">Features +</a>
+                                <!-- Dropdown Menu -->
+                                <ul class="dropdown-menu mega-menu" role="menu" aria-labelledby="features-drop">
+                                    <li class="mega-menu-wrapper" role="menuitem">
+                                        <span class="menu-title">Mega Menu with links &amp; text items</span>
+                                        <ul class="row-fluid" role="menu">
+                                            <li class="span4" role="menuitem">
+                                                <a href="features.htm">
+                                                    <img src="img/features/feature-1.png" alt="Feature 1"></a>
+                                                <a href="features.htm" tabindex="-1" class="menu-item">Mobile Friendly</a>
+                                                <span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span>
+                                            </li>
+                                            <li class="span4" role="menuitem">
+                                                <a href="features.htm">
+                                                    <img src="img/features/feature-2.png" alt="Feature 2"></a>
+                                                <a href="features.htm" tabindex="-1" class="menu-item">24/7 Support</a>
+                                                <span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span>
+                                            </li>
+                                            <li class="span4" role="menuitem">
+                                                <a href="features.htm">
+                                                    <img src="img/features/feature-4.png" alt="Feature 4"></a>
+                                                <a href="features.htm" tabindex="-1" class="menu-item">99% Uptime</a>
+                                                <span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="pricing.htm" class="menu-item">Pricing</a></li>
+                            <li><a href="customers.htm" class="menu-item">Customers</a></li>
+                            <li class="dropdown"><a href="about.htm" class="dropdown-toggle" id="about-drop" data-toggle="dropdown">About +</a>
+                                <!-- Dropdown Menu -->
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="about-drop">
+                                    <li role="menuitem"><a href="about.htm" tabindex="-1" class="menu-item">About Us</a></li>
+                                    <li role="menuitem"><a href="team.htm" tabindex="-1" class="menu-item">Our Team</a></li>
+                                    <li role="menuitem"><a href="contact.htm" tabindex="-1" class="menu-item">Contact</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="blog.htm" class="dropdown-toggle" id="blog-drop" data-toggle="dropdown">Blog +</a>
+                                <!-- Dropdown Menu -->
+                                <ul class="dropdown-menu pull-left" role="menu" aria-labelledby="blog-drop">
+                                    <li role="menuitem"><a href="blog.htm" tabindex="-1" class="menu-item">Right Sidebar</a></li>
+                                    <li role="menuitem"><a href="blog-leftbar.htm" tabindex="-1" class="menu-item">Left Sidebar</a></li>
+                                    <li role="menuitem"><a href="blog-post.htm" tabindex="-1" class="menu-item">Blog Post</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="pages.htm" class="dropdown-toggle" id="pages-drop" data-toggle="dropdown">More +</a>
+                                <!-- Dropdown Menu -->
+                                <ul class="dropdown-menu pull-left" role="menu" aria-labelledby="pages-drop">
+                                    <li role="menuitem"><a href="login.htm" tabindex="-1" class="menu-item">Login</a></li>
+                                    <li role="menuitem"><a href="signup.htm" tabindex="-1" class="menu-item">Sign Up</a></li>
+                                    <li role="menuitem"><a href="starter.htm" tabindex="-1" class="menu-item">Starter Snippets</a></li>
+                                    <li role="menuitem"><a href="index-static.htm" tabindex="-1" class="menu-item">Homepage Static Banner</a></li>
+                                    <li role="menuitem"><a href="fixed-header.htm" tabindex="-1" class="menu-item">Fixed Header</a></li>
+                                    <li role="menuitem"><a href="colours.htm" tabindex="-1" class="menu-item">Theme Colours</a></li>
+                                    <li role="menuitem"><a href="elements.htm" tabindex="-1" class="menu-item">Theme Elements</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
         </div>
-      </div>
+
     </div>
 
     <!-- We use row-fluid inside containers to achieve a resizable layout. -->
     <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
     <!-- http://stackoverflow.com/a/12270322 -->
     <div class="container">
-      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
-      <!-- www.google.com/fonts/specimen/Ubuntu -->
-      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
-      <div class="row-fluid heading">
-        <div class="span12">
-          <h1>Manage, Plan, and Track from one place</h1>
+        <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+        <!-- www.google.com/fonts/specimen/Ubuntu -->
+        <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+        <div class="row-fluid heading">
+            <div class="span12">
+                <h1>Manage, Plan, and Track from one place</h1>
+            </div>
         </div>
-      </div> 
-      <div class="row-fluid subheading">
-        <div class="span12">
-          <!-- Special typography from Bootstrap for lead paragraph. -->
-          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">One solution for everyday activities</p>
+        <div class="row-fluid subheading">
+            <div class="span12">
+                <!-- Special typography from Bootstrap for lead paragraph. -->
+                <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+                <p class="lead">One solution for everyday activities</p>
+            </div>
         </div>
-      </div>
-      <div class="row-fluid pitch">
-        <div class="span5 offset1 video"> 
-            <img style="width:410px; height:310px" class="img-polaroid" src="https://dl.dropboxusercontent.com/s/7gbemwcm38up0uu/SocialMediaClock-300x298.png?token_hash=AAEmrCz4s561JSe37shn29IiJ9dRuA6LngZ-IDNjUe8mqw&dl=1">
-        </div>
+        <div class="row-fluid pitch">
+           <!-- <div class="span5 offset1 video">
+                <img style="width: 410px; height: 310px" class="img-polaroid" src="https://dl.dropboxusercontent.com/s/7gbemwcm38up0uu/SocialMediaClock-300x298.png?token_hash=AAEmrCz4s561JSe37shn29IiJ9dRuA6LngZ-IDNjUe8mqw&dl=1">
+            </div>-->
 
-        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
-          <div class="span8 offset2">
-            <div class="statistics">
-              <div class="span4">
-                <!-- linediv-l and linediv-r give dividing lines that look
+            <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+            <div style="height:250px;" class="span12 actions">
+                <div class="span8 offset2">
+                    <div class="statistics">
+                        <div class="span4">
+                            <!-- linediv-l and linediv-r give dividing lines that look
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
-                <div class="linediv-l">
-                <h3>1000</h3> <p>backers</p>
+                            <div class="linediv-l">
+                                <h3>1000</h3>
+                                <p>backers</p>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="linediv-c">
+                                <h3>$6000</h3>
+                                <p>of $10,000</p>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="linediv-r">
+                                <h3>10</h3>
+                                <p>days left</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $10,000</p>
+                <div class="span10 offset1">
+                    <!-- Bootstrap progress bar -->
+                    <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+                    <div class="thermometer progress active">
+                        <div class="bar bar-success" style="width: 60%;"></div>
+                        <div class="bar bar-warning" style="width: 40%;"></div>
+                    </div>
                 </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-r">
-                <h3>10</h3> <p>days left</p>
+                <div class="span6 offset3 order">
+                    <!-- Standard Bootstrap button. -->
+                    <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+                    <a class="coinbase-button" data-code="ab04f455a384b485cea3880e3dab66e3" data-button-style="custom_large" href="https://coinbase.com/checkouts/ab04f455a384b485cea3880e3dab66e3">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="span10 offset1">
-            <!-- Bootstrap progress bar -->
-            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-            <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
+        </div>
+
+        <!-- Beyond this part the marketing copy begins. -->
+        <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+        <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+        <!-- http://placehold.it -->
+        <div class="row-fluid section1">
+            <div class="span5 offset1 asset">
+                <img class="img-polaroid" src="https://dl.dropboxusercontent.com/s/jlzjhom8xnse7ug/images.jpg?token_hash=AAHZ9VJcVc5O5N2oZ79E226Q7aTQVo_KNWphTrc-7uAAiw&dl=1">
             </div>
-          </div>
-          <div class="span6 offset3 order">
-            <!-- Standard Bootstrap button. -->
-            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <a class="coinbase-button" data-code="ab04f455a384b485cea3880e3dab66e3" data-button-style="custom_large" href="https://coinbase.com/checkouts/ab04f455a384b485cea3880e3dab66e3">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-          </div>
-          <div class="span8 offset2 social">
-            <!-- Social buttons are not included in default Bootstrap. -->
-            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-            <!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-<a class="addthis_button_preferred_1"></a>
-<a class="addthis_button_preferred_2"></a>
-<a class="addthis_button_preferred_3"></a>
-<a class="addthis_button_preferred_4"></a>
-<a class="addthis_button_compact"></a>
-<a class="addthis_counter addthis_bubble_style"></a>
-</div>
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520185976fdc6c25"></script>
-<!-- AddThis Button END -->
-          </div>
-        </div>
-      </div>
+            <div class="span5 copy">
+                <p>
+                    Features
+           
+                </p>
+                <ul>
+                    <li>Track billable and non-billable hours</li>
+                    <li>Role based access</li>
+                    <li>Manage stuff from mobile</li>
+                    <li>Export and download reports</li>
+                    <li>Export and download reports</li>
+                </ul>
 
-      <!-- Beyond this part the marketing copy begins. -->
-      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-      <!-- http://placehold.it -->
-      <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-            <img class="img-polaroid" src="https://dl.dropboxusercontent.com/s/jlzjhom8xnse7ug/images.jpg?token_hash=AAHZ9VJcVc5O5N2oZ79E226Q7aTQVo_KNWphTrc-7uAAiw&dl=1">
+            </div>
         </div>
-        <div class="span5 copy">
-            <p>
-                Features
-            </p>
-              <ul>
-                  <li>Track billable and non-bilalable hours</li>
-                  <li>Role based access</li>
-                  <li>Manage stuff from mobile</li>
-                  <li>Export and download reports</li>
-                  <li>Export and download reports</li>
-              </ul>
-            
-        </div>
-      </div>
 
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-            What a personal companion offers?
+        <div class="row-fluid section2">
+            <div class="span5 offset1 copy copy-right">
+                <p>
+                    What a personal companion offers?
               Time Management
               Todo list
               personal Finanace
               Career Planning and Tracking
-          </p>
-        </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-      </div>
-
-      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
-      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
-          <div class="span10 offset1">
-            <h3>FAQ</h3>
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseOne">
-                    What Personal Companion is for?
-                  </a>
-                </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Personal companion is for managing your daily affair from one place and from anywhere mobile, web etc.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                    Who should use personal companion?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Any body who wants to manage everything from one place. And have everything available from one place.
-                  </div>
-                </div>
-              </div>
+         
+                </p>
             </div>
-          </div>
+            <div class="span5 asset">
+                <img class="img-polaroid" src="http://placehold.it/480x300">
+            </div>
+        </div>
 
-      </div>
+        <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+        <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+        <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
+        <div class="row-fluid faq">
+            <div class="span10 offset1">
+                <h3>FAQ</h3>
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse"
+                                data-parent="#accordion2" href="#collapseOne">What Personal Companion is for?
+                  </a>
+                        </div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Personal companion is for managing your daily affair from one place and from anywhere mobile, web etc.
+                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse"
+                                data-parent="#accordion2" href="#collapseTwo">Who should use personal companion?
+                  </a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Any body who wants to manage everything from one place. And have everything available from one place.
+                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
-      <!-- http://creativecommons.org/licenses/ -->
-      <div class="row-fluid footer">
-        <div class="span12">
-          <p>This work is licensed under
+        </div>
+
+        <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+        <!-- http://creativecommons.org/licenses/ -->
+        <div class="row-fluid footer">
+            <div class="span12">
+                <p>
+                    This work is licensed under
             the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
               By-SA 3.0
             </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
+            put at the bottom of the page.
+                </p>
+            </div>
         </div>
-      </div>
     </div>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-43031111-1', 'herokuapp.com');
-  ga('send', 'pageview');
+        ga('create', 'UA-43031111-1', 'herokuapp.com');
+        ga('send', 'pageview');
 
 </script>
-  </body>
+</body>
 </html>
+
